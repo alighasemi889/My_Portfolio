@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+   
+<div class="relative min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center"
+style="background-image: url(images/login.webp);">
+<div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+<div class="mt-2 items-center z-10">
+    <form class="p-14 bg-white max-w-sm mx-auto rounded-xl shadow-xl overflow-hidden p-6 space-y-10">
+        <h2 class="text-4xl font-bold text-center text-indigo-600">Login</h2>
+        <div class="f-outline px-2 relative border rounded-lg focus-within:border-indigo-500">
+            <input type="email" name="email" placeholder=" "
+                class="block p-2 w-full text-lg appearance-none focus:outline-none bg-transparent" />
+            <label for="email"
+                class="absolute ml-5 top-0 text-lg text-gray-700 bg-white mt-2 -z-1 duration-300 origin-0">Email</label>
+        </div>
+        <div class="f-outline px-2 relative border rounded-lg focus-within:border-indigo-500">
+            <input type="password" name="password" placeholder=" "
+                class="block p-2 w-full text-lg appearance-none focus:outline-none bg-transparent" />
+            <label for="password"
+                class="absolute ml-5 top-0 text-lg text-gray-700 bg-white mt-2 -z-1 duration-300 origin-0">Password</label>
+        </div>
+        <div class="block mt-2">
+            <label for="" class="flex items-center">
+                <input type="checkbox"
+                    class="ml-2 rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                </input>
+                <span class="ml-2 text-sm text-gray-600">Remember me</span>
+            </label>
+        </div>
+        <div class="flex items-center flex items-center justify-end mt-4">
+            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="#">
+                Forgot Password?
+            </a>
+            <button
+                class="px-6 py-2 ml-4 font-semibold cursor-pointer text-center focus:outline-none transition hover:shadow-lg shadow hover:bg-indigo-700 rounded-full text-white bg-indigo-600 ">
+      Log in
+  </button>
+</div>
+</form>
+</div>
+</div>
+
+
+<style>
+.f-outline input:focus-within ~ label,
+.f-outline input:not(:placeholder-shown) ~ label {
+    transform: translateY(-1.5rem) translatex(-1rem) scaleX(0.80) scaleY(0.80);
+}
+.goto_index {
+  display: none;
+  color: #fff;
+}
+.h__show:hover .goto_index{
+    display: block;
+  width: 100px;
+  max-width: 100px;
+  text-align: center;
+  margin-top: -86px;
+  font-size: 19px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  margin-left: -24px;
+}
+.typing {
+    width: 473px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #7E2EA0;
+    animation: typing 2s steps(12, end), cursor .2s steps(12, end) infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+</style>
+
+<!--Spanish:
+Me gusta mucho la programación y el diseño, 
+acabe de iniciar en la universidad,
+si me desas apoyar con una pequeña donación para mis estudios,
+te lo agredeceria,
+Espero que mi aporte te haya servido :)  
+
+English: 
+I really like programming and design,
+I just started university,
+If you want to support me with a small donation for my studies, 
+I would really appreciate it.
+I hope my contribution has served you :)  -->
+
+<div class=" flex items-end justify-end fixed bottom-2 right-6 mb-5 mr-4 z-20">
+                <a href="index.html"
+                    target="_blank"
+                    class="h__show inline-block font-semibold text-center text-2xl p-1 transition focus:outline-none shadow hover:shadow-lg hover:bg-blue-700 p-0 w-12 h-12 rounded-full border text-blue-700 bg-blue-100 hover:text-white border-blue-700 shadow hover:shadow-lg">
+                    <i class="fab fa-paypal"></i>
+                    <h3 class="cssanimation typing goto_index">
+                        main page
+                    </h3>
+                </a>
+        </div>
+</body>
+</html>
